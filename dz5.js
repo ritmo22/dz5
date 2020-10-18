@@ -6,7 +6,7 @@ for (let y = 0; y < 10; y++) {
             clear: 'left'
         };
         let content = '';
-        if (y == 0 || y == 9) content = x > 0 && x < 9 ? 'ABCDEFGH'.charAt(x - 1) : null;
+        if (y == 0 || y == 9) content = x > 0 && x < 9 ? 'ABRDEFGH'.charAt(x - 1) : null;
         else if (x == 0 || x == 9) content = 9 - y;
         else css.background = (x + y) % 2 ? '#000' : '#fff';
         let node = document.createElement('div');
